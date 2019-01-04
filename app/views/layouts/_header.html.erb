@@ -81,7 +81,7 @@
           </li>
         <% else %>
         <li class="hidden-sm hidden-md"> <!-- signup button -->
-          <a rel="tooltip" class="signupToggle c-ptr" title="<%= t('layout._header.become_part_community') %>">
+          <a rel="tooltip" class="signupToggle" href="#" title="<%= t('layout._header.become_part_community') %>">
             <%= t('layout._header.join') %>
           </a>
         </li>
@@ -122,7 +122,7 @@
                 <li><a href="/logoutRemotely">Logout from all devices</a></li>
               </ul>
             <% else %> <!-- Login button -->
-              <a class="loginToggle c-ptr">
+              <a class="loginToggle" href="#">
                 <%= t('layout._header.login.login_title') %>
               </a>
             <% end %>
@@ -255,9 +255,7 @@
     padding: 0!important;
   }
 
-  .c-ptr{
-    cursor: pointer ;
-  }
+
 
   .modal:before {
     content: '';
